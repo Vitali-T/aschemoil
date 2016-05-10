@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ASChemOil | Contact</title>
+<link href="stylesheets/screen.css" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="js/validate.js"></script>
+<script src="JS/script.js"></script>
+</head>
+<body>
+<div class="content-wrap">
+<div class="main_img">
+  <nav>
+  	<div class="logo"><img src="img/logo.png"></div>
+    <ul class="nav_bar">
+ 	  <a href="index.html"><li>Acasa</li></a> 
+      <a href="about.html"><li>Companie</li></a> 
+      <a href="products.html"><li>Produse</li></a> 
+      <a href="certificate.html"><li>Noutati</li></a> 
+      <a href="contact.html"><li>Contact</li></a>
+    </ul>
+    <div class="clearfix"></div>
+  </nav>
+  	<img src="img/menu_ico.jpg" id="menu" onclick="show();">
+	<div id="small_menu" style="display:none;">
+		<ul class="menu_list">
+			<a href="index.html"><li class="menu_item">Acasa</li></a>
+			<a href="about.html"><li class="menu_item">Companie</li></a>
+			<a href="products.html"><li class="menu_item">Produse</li></a>
+			<a href="certificate.html"><li class="menu_item">Noutati</li></a>
+			<a href="contact.html"><li class="menu_item">Contact</li></a>
+       </ul> 
+	 </div>
+  </div>
+  <div class="main_content">
+  <div class="content_title"><h2>Contact</h2></div>
+      <div id="contact_form">
+      <h1>Contacteaza-ne</h1>
+          <h2 class="left">Telefon: 0732000001</h2> <h2 class="right">E-mail: info@aschemoil.ro</h2>
+          <form action="sendMail.php" onsubmit="return validate(this);" method="POST">
+              <div class="input-field"><span class="field-icon"><img src="img/Icons/user.png"></span><input type="text" name="fullname" placeholder="Numele complet*"></div><div class="mandatory-field"></div>
+            <div class="input-field"><span class="field-icon"><img src="img/Icons/email.png"></span><input type="text" name="mail" placeholder="E-mail*"></div><div class="mandatory-field second"></div>
+            <div class="input-field"><span class="field-icon"><img src="img/Icons/msg.png"></span><input type="text" name="subject" placeholder="Subiect"></div>
+              <div class=""><span class="field-icon"><img src="img/Icons/msg.png"></span><textarea placeholder="Mesaj" name="message"></textarea></div>
+              <button name="submit">Trimite</button>
+          </form>
+      </div>
+  </div>
+  <hr>
+  <div class="section1 scroll"><a href="#section1"><img src="img/oil_img.jpg"><h3>Produse</h3></a><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec erat a enim cursus bibendum eget vitae est. Aenean quis faucibus nulla. Nulla dapibus quis mauris vitae luctus. Nulla vehicula consequat scelerisque. Maecenas a magna id lectus luctus euismod id eu arcu. Duis sit amet lorem sit amet velit placerat rutrum vitae id dolor. Maecenas bibendum laoreet metus, faucibus placerat felis interdum et. Donec eu consequat ex. In hac habitasse platea dictumst. Donec eget lectus semper, elementum quam dapibus, convallis velit. Aenean lobortis consectetur ullamcorper. Integer pulvinar condimentum auctor. Donec pulvinar accumsan urna ut tempor. Vestibulum bibendum dignissim augue. Donec tortor lorem, dapibus nec ullamcorper pellentesque, vehicula ut est.</p>
+<a href="products.html"><button class="btn" id="section1">Mai mult</button></a>
+<div class="clearfix"></div>
+</div>
+  <div class="section2 scroll"><a href="#section2"><img src="img/certificate.jpg"><h3>Certificari</h3></a><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec erat a enim cursus bibendum eget vitae est. Aenean quis faucibus nulla. Nulla dapibus quis mauris vitae luctus. Nulla vehicula consequat scelerisque. Maecenas a magna id lectus luctus euismod id eu arcu. Duis sit amet lorem sit amet velit placerat rutrum vitae id dolor. Maecenas bibendum laoreet metus, faucibus placerat felis interdum et. Donec eu consequat ex. In hac habitasse platea dictumst. Donec eget lectus semper, elementum quam dapibus, convallis velit. Aenean lobortis consectetur ullamcorper. Integer pulvinar condimentum auctor. Donec pulvinar accumsan urna ut tempor. Vestibulum bibendum dignissim augue. Donec tortor lorem, dapibus nec ullamcorper pellentesque, vehicula ut est.</p>
+<a href="certificate.html"><button class="btn" id="section2">Mai mult</button></a>
+</div>
+  <div class="section3 scroll"><a href="#section3"><img src="img/contact.jpg"><h3>Contact</h3></a><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec erat a enim cursus bibendum eget vitae est. Aenean quis faucibus nulla. Nulla dapibus quis mauris vitae luctus. Nulla vehicula consequat scelerisque. Maecenas a magna id lectus luctus euismod id eu arcu. Duis sit amet lorem sit amet velit placerat rutrum vitae id dolor. Maecenas bibendum laoreet metus, faucibus placerat felis interdum et. Donec eu consequat ex. In hac habitasse platea dictumst. Donec eget lectus semper, elementum quam dapibus, convallis velit. Aenean lobortis consectetur ullamcorper. Integer pulvinar condimentum auctor. Donec pulvinar accumsan urna ut tempor. Vestibulum bibendum dignissim augue. Donec tortor lorem, dapibus nec ullamcorper pellentesque, vehicula ut est.</p>
+ <a href="contact.html"><button class="btn" id="section3">Mai mult</button></a>
+ </div>
+</div>
+<footer>
+    <img class="fbk" src="img/facebook-button.png">
+    	<ul class="footer_menu">
+     		 <a href="index.html"><li>Acasa</li></a> 
+             <a href="about.html"><li>Companie</li></a> 
+             <a href="products.html"><li>Produse</li></a> 
+             <a href="certificate.html"><li>Noutati</li></a> 
+             <a href="contact.html"><li>Contact</li></a>
+         </ul>
+  <p>&copy; Copyright ASChemOil 2016</p>
+  <div class="clearfix"></div>
+</footer>
+</body>
+</html>
