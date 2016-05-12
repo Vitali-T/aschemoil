@@ -308,6 +308,11 @@ nav {
   margin-right: 8vw;
 }
 
+.prod-container{
+	height:400px;
+	overflow:scroll;
+}
+
 .prod-title {
   margin-bottom: 30px;
   font-family: "Oswald", sans-serif;
