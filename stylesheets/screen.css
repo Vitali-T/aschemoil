@@ -197,7 +197,7 @@ nav {
   background-size: cover;
 }
 .main_img #intro {
-  padding-top: 150px;
+  padding-top: 250px;
   width: 50%;
   margin-left: 25px;
 }
@@ -240,7 +240,7 @@ nav {
   font-size: 1.1em;
   line-height: 25px;
   text-align: justify;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.9);
   box-shadow: 5px 5px 5px #828282;
 }
 .about-us img, .certificate-details img {
@@ -339,16 +339,17 @@ nav {
 }
 .products p {
   text-align: justify;
-  height: 120px;
+  height: auto;
+  display: inline-block;
+  width: 55%;
+  height: 180px;
   overflow: hidden;
+  float: right;
   font-family: "PT Sans Narrow", "Arial Narrow", sans-serif;
   font-size: 17px;
   line-height: 20px;
-  background-color: #E0E0E0;
   padding: 5px;
-  transform: rotate(-1deg);
   margin: 10px;
-  clear: right;
 }
 .products a {
   text-decoration: none;
@@ -356,8 +357,8 @@ nav {
   color: #3B3B3B;
   font-weight: 700;
   font-size: 0.9em;
-  float: right;
-  margin-right: 15px;
+  float: left;
+  margin-left: 15px;
 }
 .products a span {
   font-size: 1.5em;
@@ -383,16 +384,17 @@ nav {
 .product_icon {
   margin: 10px;
   margin-right: 0;
-  width: 25%;
+  max-width: 35%;
+  max-height: 180px;
+  float: left;
 }
 
 .product_details {
-  display: inline-block;
+  display: block;
   font-family: "Oswald", sans-serif;
   border-collapse: separate;
-  margin: 10px;
-  width: 65%;
-  transform: rotate(1deg);
+  margin: 10px auto 20px 10px;
+  transform: rotate(-2deg);
 }
 .product_details th, .product_details td {
   padding: 5px;
@@ -403,12 +405,10 @@ nav {
 }
 .product_details th {
   background-color: #9B9B9B;
-  width: 20%;
 }
 .product_details td {
   text-align: right;
   background-color: #ECC728;
-  width: 70%;
 }
 
 .all-prod-link {
@@ -435,30 +435,40 @@ nav {
   font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
 }
 #prod-full-list th, #prod-full-list td {
-  border: 1px dotted #FFFFFF;
+  border: 2px solid #FFFFFF;
   padding: 15px;
 }
 #prod-full-list td {
-  text-align: right;
   padding-right: 25px;
 }
+#prod-full-list tr:nth-child(even) {
+  background-color: #FFF0CC;
+}
 #prod-full-list tr:nth-child(odd) {
-  background-color: #c8c8c8;
+  background-color: #FFF8E8;
 }
 #prod-full-list .left-th, #prod-full-list th {
   height: 40px;
-  background-color: rgba(237, 145, 33, 0.8);
+  background-color: #F4CC70;
   width: 15vw;
   text-transform: uppercase;
   text-align: center;
-  color: #FFFFFF;
+  color: #000;
+  text-shadow: 1px 1px #FFFFFF;
   font-weight: bold;
 }
 
 .certificate-details {
   text-align: justify;
   line-height: 1.5em;
-  margin: 25px 4.5% 15px 4.5%;
+  margin: 50px 4.5% 15px 4.5%;
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.certificate-details img {
+  max-height: 150px;
+  border: 1px solid lightgray;
 }
 
 .certificate {
@@ -704,10 +714,10 @@ footer li {
   }
 
   #contact_form {
-    height: 450px;
+    min-height: 400px;
+    width: 100%;
   }
   #contact_form form {
-    width: 90%;
     margin: 30px 5%;
   }
   #contact_form .input-field input, #contact_form textarea {
@@ -719,6 +729,16 @@ footer li {
   }
 }
 @media screen and (max-width: 500px) {
+  #contact_form .input-field input, #contact_form textarea {
+    padding: 5px;
+  }
+  #contact_form .left, #contact_form .right {
+    float: none;
+    display: block;
+    text-align: center;
+    margin: 15px auto;
+  }
+
   .product_details {
     width: 90%;
     margin-left: 5%;
