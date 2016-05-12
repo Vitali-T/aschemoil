@@ -386,6 +386,7 @@ nav {
   margin-right: 0;
   max-width: 35%;
   max-height: 180px;
+  clear:right;
   float: left;
 }
 
@@ -393,8 +394,8 @@ nav {
   display: block;
   font-family: "Oswald", sans-serif;
   border-collapse: separate;
-  margin: 10px auto 20px 10px;
-  transform: rotate(-2deg);
+  margin: 10px 10px 20px 0;
+  float:right;
 }
 .product_details th, .product_details td {
   padding: 5px;
