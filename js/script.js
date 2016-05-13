@@ -29,4 +29,7 @@ $(document).scroll(function() {
     $('nav').css('background', 'rgba(130, 130, 130, ' + ($(this).scrollTop() / dHeight + 0.3) + ')');
   }
 });
+
+//make carousel rotate automatically
+setInterval(function() { $("#carousel").Carousel3d('next') }, 4000);
 });
