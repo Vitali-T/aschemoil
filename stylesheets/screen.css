@@ -417,6 +417,7 @@ nav {
 .product_details td {
   text-align: right;
   background-color: #ECC728;
+  width:200px;
 }
 
 .all-prod-link {
