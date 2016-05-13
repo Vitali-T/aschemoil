@@ -26,7 +26,7 @@ $(document).ready(function() {
 $(document).scroll(function() {
   var dHeight = $(this).height()-$(window).height();
   if (dHeight >= $(this).scrollTop()) {
-    $('nav').css('background', 'rgba(130, 130, 130, ' + ($(this).scrollTop() / dHeight + 0.3) + ')');
+    $('nav').css('background', 'rgba(130, 130, 130, ' + ($(this).scrollTop() / dHeight + 0.7) + ')');
   }
 });
 
