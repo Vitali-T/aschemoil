@@ -401,6 +401,7 @@ nav {
   border-collapse: separate;
   margin: 10px 10px 20px 0;
   float:right;
+  width:55%;
 }
 .product_details th, .product_details td {
   padding: 5px;
